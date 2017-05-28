@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="card-flip.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="card-flip.js"></script>
+
+</head>
+<body>
+
+	<input id="change-perspective" value="200px" />
+	<input id="change-loc" value="10% 0" /> <!-- These are the x y values -->
+
+	<div id="parent">
+		<div id="threeD">
+			Hello, world.
+		</div>
+		<div id="otherChild">
+			Goodbye, world.
+		</div>
+	</div>
+
+	<!-- Card is the outer container in which children will be able to move around.
+	It is 3D and its children can use that 3D space. -->
+	<div class="card">
+		<!-- Inner container that will contain 2 children, and they will move in 3D space with it -->
+		<div class="card-holder">
+			<!-- Front of the card -->
+			<div class="card-front"><img src="lucy-toy.jpg"></div>
+			<!-- Back of the card -->
+			<div class="card-back"><img src="olive-water.jpg"></div>
+		</div>
+	</div>
+
+</body>
+</html>

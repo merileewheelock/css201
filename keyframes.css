@@ -1,0 +1,60 @@
+body{
+	/* animation: spin 4s infinite linear alternate; */
+	animation: color-change 10s infinite;
+}
+
+.sun{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: orange;
+	/* color: white; */
+	font-size: 25px;
+	text-align: center;
+	line-height: 4;
+	animation: move 8s infinite linear alternate;
+}
+
+.text{
+	/* animation: spin 4s infinite linear; */
+	font-size: 120px;
+	color: darkgray;
+	text-shadow: 10px 10px black;
+	margin-left: 700px;
+	margin-top: 300px;
+	animation: text-shadow 8s infinite linear alternate;
+}
+
+@keyframes text-shadow{
+	0% {text-shadow: 10px 10px black;}
+	25% {text-shadow: 5px 10px black;}
+	50% {text-shadow: 0px 10px black;}
+	75% {text-shadow: -5px 10px black;}
+	100% {text-shadow: -10px 10px black;}
+}
+
+@keyframes spin{ /* spin and move are just variables that we set */
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes move{
+	from {
+		transform: translateX(0px);
+	}
+	to {
+		transform: translateX(1500px);
+	}
+}
+
+/* @keyframes color-change{
+	0%		{background-color: red}
+	25%		{background-color: yellow}
+	50%		{background-color: green}
+	75%		{background-color: blue}
+	100%	{background-color: orange}
+} */
